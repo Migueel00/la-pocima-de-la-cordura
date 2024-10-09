@@ -17,7 +17,7 @@ export default class Cauldron {
             return Potion.failed();
         }
 
-        if(isPotionOfSanity(ingredient1, ingredient2)){
+        if(this.isPotionOfSanity(ingredient1, ingredient2)){
             return Potion.sanity();
         }else{
             return Potion.with(

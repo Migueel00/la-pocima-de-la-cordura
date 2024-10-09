@@ -30,7 +30,7 @@ const execute = async () => {
         const data          = await getData();
         const ingredients   = Ingredients.load(data);
 
-        await showIngredients(ingredients);
+        // await showIngredients(ingredients);
         const cauldron      = new Cauldron(ingredients);
 
         const potion1       = cauldron.createPotion("Bear Claws", "Bee");
